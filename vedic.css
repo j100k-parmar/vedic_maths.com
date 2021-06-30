@@ -176,6 +176,10 @@ nav {
         padding: 11px;
         font-size: 18px;
     }
+    .cart {
+        margin-top: 0;
+        padding-top: 30px;
+    }
     .menu {
         display: none;
     }
