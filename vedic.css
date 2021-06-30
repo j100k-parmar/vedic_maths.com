@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(214, 209, 209);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.logo {
+    width: 80px;
+    float: left;
+    padding-top: 10px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.search {
+    width: 230px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 27px;
+    background: white;
+    float: left;
+    margin: 25px;
+    color: gray;
+    color: gray;
+    padding: 14px;
+    font-size: 20px;
+}
+
+.menu {
+    float: left;
+    width: 40%;
+    margin-top: 30px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #0f8ad5;
+}
+
+.menu ul li a:hover {
+    color: white;
+}
+
+.cart {
+    float: right;
+    color: #0f8ad5;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
+
+.box {
+    width: 35%;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 0px 30px 0px grey;
+    margin-left: 20px;
+}
+
+.up_box {
+    width: 100%;
+    height: 200px;
+    background-image: url(img/course_thumbnail_efanew_42.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.info {
+    display: flex;
+    color: red;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.info p {
+    width: 70%;
+}
+
+.lang {
+    padding-left: 70px;
+}
+
+.review {
+    display: flex;
+}
+
+.review i {
+    color: orange;
+}
+
+.review p {
+    padding-left: 10px;
+}
+
+.lessons {
+    width: 50%;
+    margin: auto;
+}
+
+.lessons i {
+    font-size: 40px;
+    padding: 20px;
+    color: gray;
+}
+
+.lessons-no {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    color: gray;
+}
+
+.lessons-no p {
+    width: 100px;
+}
+
+.amount {
+    width: 100px;
+    padding: 10px 20px;
+    float: left;
+}
+
+.amount p {
+    color: gray;
+}
+
+.btn {
+    float: right;
+    margin-top: 27px;
+    width: 154px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #3e51ad;
+}
+
+@media only screen and (max-width:430px) {
+    nav {
+        height: 87px;
+    }
+    .logo {
+        width: 70px;
+    }
+    .search {
+        width: 177px;
+        height: 43px;
+        padding: 11px;
+        font-size: 18px;
+    }
+    .menu {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (min-width:430px) and (max-width:770px) {
+    .menu {
+        display: none;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .box {
+        width: 60%;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width:770px) and (max-width:1026px) {
+    .lessons i {
+        padding: 0;
+    }
+    .btn {
+        margin-top: -55px;
+    }
+    .search {
+        width: 200px;
+        margin: 30px;
+    }
+    .menu {
+        width: 54%;
+        margin-top: 40px;
+    }
+    .menu ul li {
+        padding-left: 8px;
+    }
+}
